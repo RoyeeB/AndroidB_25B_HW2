@@ -37,7 +37,6 @@ Supports multiple styles with smooth animations, color configuration, and percen
 
 ## 🧩 Example Usage (XML)
 
-```xml
 <com.example.customprogressbar.CircleProgressBar
     android:id="@+id/circle_progress"
     android:layout_width="200dp"
@@ -46,6 +45,8 @@ Supports multiple styles with smooth animations, color configuration, and percen
     app:circleProgressTextColor="@android:color/white"
     app:circleProgressBackgroundColor="@android:color/darker_gray"
     app:circleProgressStrokeWidth="16dp" />
+
+---
 
 ## 💻 Example Usage (Java)
 
@@ -58,6 +59,8 @@ horizontal.animateProgressTo(60, 1500);
 InfiniteProgressBar infinite = findViewById(R.id.infinite_progress);
 infinite.start();
 
+---
+
 | View Class                  | XML Attributes                                                                                                 |
 | --------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | `CircleProgressBar`         | `circleProgressColor`, `circleProgressTextColor`, `circleProgressBackgroundColor`, `circleProgressStrokeWidth` |
@@ -66,11 +69,9 @@ infinite.start();
 | `SegmentedProgressBar`      | `segmentedProgressColor`, `segmentedProgressBackgroundColor`, `segmentCount`                                   |
 | `GradientCircleProgressBar` | `gradientProgressStrokeWidth`, `gradientProgressBackgroundColor`                                               |
 
+---
 
 ## 📱 Demo
 https://drive.google.com/file/d/1HXq8d431fTMdRC-5Y7iTo1lRsK0LkNYk/view?usp=drive_link
 ![image](https://github.com/user-attachments/assets/356e1f5d-2896-491d-8cb7-d6703a5a7a62)
 
-
-
-ץץ.תצחלךחךלחךחלך
