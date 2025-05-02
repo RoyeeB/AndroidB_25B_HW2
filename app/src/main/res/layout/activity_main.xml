@@ -1,0 +1,177 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <!-- כותרת ראשית -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom Progress Bars"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Circle Progress -->
+        <LinearLayout
+            android:id="@+id/circle_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Circle Progress"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp"/>
+
+            <com.example.customprogressbar.CircleProgressBar
+                android:id="@+id/circle_progress"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:circleProgressColor="@android:color/holo_blue_dark"
+                app:circleProgressTextColor="@android:color/black"
+                app:circleProgressBackgroundColor="@android:color/darker_gray"
+                app:circleProgressStrokeWidth="16dp"/>
+        </LinearLayout>
+
+        <!-- Horizontal Progress -->
+        <LinearLayout
+            android:id="@+id/horizontal_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toBottomOf="@id/circle_group"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horizontal Progress"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp"/>
+
+            <com.example.customprogressbar.HorizontalProgressBar
+                android:id="@+id/horizontal_progress"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                app:horizontalProgressColor="@android:color/holo_green_dark"
+                app:horizontalProgressTextColor="@android:color/white"
+                app:horizontalProgressBackgroundColor="@android:color/darker_gray"/>
+        </LinearLayout>
+
+        <!-- Infinite Progress -->
+        <LinearLayout
+            android:id="@+id/infinite_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toBottomOf="@id/horizontal_group"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Infinite Progress"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp"/>
+
+            <com.example.customprogressbar.InfiniteProgressBar
+                android:id="@+id/infinite_progress"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                app:infiniteProgressColor="@android:color/holo_orange_light"
+                app:infiniteProgressBackgroundColor="@android:color/darker_gray"/>
+        </LinearLayout>
+
+        <!-- Segmented Progress -->
+        <LinearLayout
+            android:id="@+id/segmented_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toBottomOf="@id/infinite_group"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Segmented Progress"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp"/>
+
+            <com.example.customprogressbar.SegmentedProgressBar
+                android:id="@+id/segmented_progress"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                app:segmentedProgressColor="@android:color/holo_purple"
+                app:segmentedProgressBackgroundColor="@android:color/darker_gray"
+                app:segmentCount="5"/>
+        </LinearLayout>
+
+        <!-- Gradient Circle Progress -->
+        <LinearLayout
+            android:id="@+id/gradient_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toBottomOf="@id/segmented_group"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gradient Circle Progress"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp"/>
+
+            <com.example.customprogressbar.GradientCircleProgressBar
+                android:id="@+id/gradient_circle"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:gradientProgressStrokeWidth="20dp"
+                app:gradientProgressBackgroundColor="@android:color/darker_gray"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

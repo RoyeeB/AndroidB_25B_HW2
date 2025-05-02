@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="circleProgressColor" format="color" />
+        <attr name="circleProgressBackgroundColor" format="color" />
+        <attr name="circleProgressTextColor" format="color" />
+        <attr name="circleProgressStrokeWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalProgressBar">
+        <attr name="horizontalProgressColor" format="color" />
+        <attr name="horizontalProgressBackgroundColor" format="color" />
+        <attr name="horizontalProgressTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="InfiniteProgressBar">
+        <attr name="infiniteProgressColor" format="color" />
+        <attr name="infiniteProgressBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SegmentedProgressBar">
+        <attr name="segmentedProgressColor" format="color" />
+        <attr name="segmentedProgressBackgroundColor" format="color" />
+        <attr name="segmentCount" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="GradientCircleProgressBar">
+        <attr name="gradientProgressStrokeWidth" format="dimension" />
+        <attr name="gradientProgressBackgroundColor" format="color" />
+    </declare-styleable>
+
+</resources>
+
+
+
+
+
+
